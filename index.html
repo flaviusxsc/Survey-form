@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Client form</title>
+  </head>
+  <body class="text-dark bg-light">
+    <div class="container bg-warning">
+      <header>
+        <h1 id="title">Client form</h1>
+        <p id="description" class="lead">Thank you for you're time!</p>
+      </header>
+      <main>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text"  name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">E-mail</label>
+            <input type="email" class="form-control" id="email" placeholder="E-mail" required/>
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Varsta</label>
+            <input type="number" min="18" max="90" class="form-control" id="number" placeholder="Age">
+          </div>
+          <div class="form-group">
+            <label for="dropdown">Choose you're favourite Cryptocurrency</label>
+            <select class="form-control" id="dropdown">
+              <option>Etherium</option>
+              <option>Bitcoin</option>
+              <option>Litecoin</option>
+              <option>Cardano</option>
+              <option>NEO</option>
+            </select>
+          </div> 
+          <div id="client-option">
+            <label>Would you invest in criptocurrency for the next 12 months?</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="client-opinion" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Yes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="client-opinion" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  No
+                </label>
+            </div>
+          </div>
+          <div id="future-of-crypto">
+            <label>What's you're favourite channel to get inform on Criptocurrency?</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="youtube" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Youtube
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="podcasts" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Podcasts
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="conference" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Conference
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="websites" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Websites
+                </label>
+            </div>
+          </div>
+          <div class="form-group">
+              <label for="comments">More suggestion</label>
+              <textarea class="form-control" id="comments" rows="3"></textarea>
+          </div>
+          <button type="submit" id="submit" class="btn btn-success btn-lg btn-block">Submit</button>
+        </form>
+      </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+  </body>
+</html>
